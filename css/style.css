@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;                      
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+header {
+    background-color: rgb(179, 154, 124);
+    width: 1000px;
+    margin: 0 auto;                  
+    text-align: center;              
+}
+
+header .logo {
+    display: block;
+    margin: 0 auto;                
+    width: 150px;
+}
+
+header h1 {
+    margin: 10px 0;                  
+    font-size: 40px;
+    color: black;
+    font-style: italic;
+    text-align: center;
+}
+
+header .campus {
+    display: block;
+    width: 100%;                     
+}
+
+nav {
+    width: 60%;
+    margin: 0 auto;                
+}
+
+nav a {
+    display: inline-block;           
+    width: 100px;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+nav a.active {                     
+    background-color: rgb(228, 200, 166);
+}
+
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+    font-style: normal;
+    width: 1000px;
+    background-color: rgb(228, 200, 166);
+    margin: 2px auto;                
+}
+
+main article {
+    width: 60%;
+    margin: 0 auto;                 
+    padding: 10px 0;                
+}
+
+main article::after {               
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main article + article {             
+    border-top: 1px solid black;
+}
+
+main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: red;
+    text-decoration: underline dotted red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+    font-style: normal;
+    text-align: justify;
+    text-indent: 20px;
+}
+main article img {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+main article img.centre {
+    float: none;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+fieldset {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+article table {
+    margin: 20px auto;              
+    width: 100%;                     
+    border-collapse: collapse;       
+}
+
+article td {
+    border: 2px solid white;
+}
+
+article th {
+    background-color: rgb(179, 154, 124);
+    text-align: center;
+    border: none;
+}
+
+article td.droite { text-align: right; }
+article td.moy    { text-align: center; }
+table.galerie {
+    margin: 0 auto;
+}
+
+table.galerie img {
+    padding: 3px;
+    border: 10px solid white;
+    box-shadow: 5px 10px 5px black;
+}
+
+
+footer {
+    width: 1000px;
+    background-color: rgb(179, 154, 124);
+    margin: 0 auto;
+}
+
+footer p {
+    font-family: "Times New Roman", serif;
+    font-size: 10px;
+    color: black;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    header, main, footer {
+        width: auto;                 
+        background-color: black;
+    }
+    header h1, main p, footer p {
+        color: white;
+    }
+    nav a {
+        color: white;
+    }
+    nav a.active {
+        color: black;
+    }
+}
